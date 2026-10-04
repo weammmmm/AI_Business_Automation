@@ -956,8 +956,18 @@ def delete():
 # =========================
 
 
+# =========================
+# Initialize Database
+# =========================
+
+init_database()
+
+
+# =========================
+# Start Application
+# =========================
+
 if __name__ == "__main__":
-    init_database()
     app.run(
         host="0.0.0.0",
         port=int(os.environ.get("PORT", 5000)),
